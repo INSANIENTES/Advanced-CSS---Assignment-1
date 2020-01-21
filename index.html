@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS - Assignment 1</title>
+    <style>
+    a[href^="https://www.google.com"]:link,
+    a[href^="https://www.google.com"]:visited {
+    color: #03b603;
+    }
+    a[href^="https://www.google.com"]:hover {
+    color: #4c9700;
+    }
+    a[href^="https://www.google.com"]:active {
+    color: #274e00;
+    }
+    a[href^="https://www.link-group.eu"]:link,
+    a[href^="https://www.link-group.eu"]:visited { 
+    	color: #ff0101; 
+    }
+    a[href^="https://www.link-group.eu"]:hover {
+        color: #a00000;
+    }
+    a[href^="https://www.link-group.eu"]:active {
+        color: #690000;
+    }
+    #second-div p:nth-child(odd) {
+        color: #0099ff
+    }
+    #second-div p:nth-child(even) {
+        color: #d80000;
+    }
+    #first-div>p::after{
+        content: "- NEW";
+        color: #f8f80a;
+    }
+    p:nth-child(8):hover {
+        font-style: italic;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.google.com/doodles">Google Doodles</a>
+    <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+    <div id="first-div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+        <div id="second-div">
+            <h3>Sub subheading</h3>
+            <p>Paragraph 4</p>
+            <p>Paragraph 5</p>
+            <p>Paragraph 6</p>
+            <p>Paragraph 7</p>
+            <p>Paragraph 8</p>
+        </div>
+    </div>
+    <p>Paragraph 9</p>
+    <p>Paragraph 10</p>
+</body>
+
+</html>
